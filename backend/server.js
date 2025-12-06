@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Connect to MongoDB (from Render environment variable)
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log("MongoDB Error:", err));
 
