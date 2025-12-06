@@ -1,0 +1,142 @@
+/* GLOBAL RESET + GOOGLE FONT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background Gradient */
+body {
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* MAIN CARD */
+.app-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d3e50;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* INPUT + BUTTON ROW */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #c8cfe3;
+  outline: none;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 6px rgba(74, 108, 247, 0.4);
+}
+
+/* BUTTON STYLE */
+button {
+  padding: 14px 20px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #3b57d6;
+  transform: translateY(-2px);
+}
+
+/* TODO LIST ITEM */
+.todo-item {
+  padding: 14px 18px;
+  margin-top: 12px;
+  background: #f6f8ff;
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s ease;
+  border-left: 5px solid transparent;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+  border-left: 5px solid #4a6cf7;
+  background: #edf0ff;
+}
+
+/* Todo text */
+.todo-text {
+  flex: 1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: #ff4d4d;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #d93636;
+  transform: scale(1.05);
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HIDE CRA DEFAULTS */
+.App,
+.App-logo,
+.App-header,
+.App-link {
+  display: none;
+}
